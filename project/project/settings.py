@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',  # Use MySQL as the database backend
+        'NAME': 'spendy_flow_db',          # Name of your MySQL database
+        'USER': 'django_spendy',             # MySQL database username
+        'PASSWORD': 'django_spendySECRET',     # MySQL database password
+        'HOST': 'localhost',                   # Database host, usually localhost
+        'PORT': '3306',                        # Port, 3306 is the default for MySQL
     }
 }
 
