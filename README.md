@@ -1,1 +1,2 @@
 # spendy-flow
+Python, django.
