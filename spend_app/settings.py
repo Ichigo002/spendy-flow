@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'spend_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'spendy_flow_db',
+        'USER': 'sf_django_user',
+        'PASSWORD': 'DjangoUser2024',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 

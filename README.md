@@ -11,6 +11,9 @@ Be sure you've installed on your machine python3
 6. go to directory *project* and run `python manage.py migrate`
 7. run `python manage.py runserver` and you did it!
 
+### *maria-db server* setup tips:
+- remember on linux(fedora 40) to run `sudo systemctl start mariadb` and `sudo systemctl enable mariadb`
+
 ## How to setup *maria-db server*?
 1. Install maria-db depending on your OS.
 2. Make it active and running.
